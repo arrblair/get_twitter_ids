@@ -7,7 +7,7 @@ text = r.text
 parse_me = text.split('</')
 
 for element in parse_me:
-    if 'data-item-id' in element():
+    if 'data-item-id' in element:
         splitter = element.split('=')
         number = splitter[1]
         split_whole_id = whole_id.split('')
